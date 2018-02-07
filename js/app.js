@@ -7,10 +7,6 @@ var initMap = () => {
     zoom: 4,
     center: casa
   });
-  /* let marker = new google.maps.Marker({
-    position: casa,
-    map: map
-  });*/
   var latitud, longitud;
   var success = (position) => {
     latitud = position.coords.latitude;
@@ -42,8 +38,24 @@ var initMap = () => {
   new google.maps.places.Autocomplete(inputEnd);
   var directionsService = new google.maps.DirectionsService;
   var directionsDisplay = new google.maps.DirectionsRenderer;
-  var calculate
-  
+  var calculateAndDisplayRoute = (directionsService, directionsDisplay) =>{
+    directionsService.route({
+      origin: inputStart.value,
+      destination: inputEnd.value,
+      travelMode: 'DRIVING'
+    }, (response, status)=>{
+      if (status === 'OK') {
+        directionsDisplay.setDirections(response);
+      } else {
+        window.alert('no encontramos la ruta');
+      }
+    });
+  };
+  directionsDisplay.setMap(map);
+  var traceRoute = ()=>{
+    calculateAndDisplayRoute(directionsService, directionsDisplay);
+  };
+  document.getElementById('ruta').addEventListener('click', traceRoute);
 };
 
 
