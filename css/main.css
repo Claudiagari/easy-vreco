@@ -4,29 +4,23 @@
   border: 3px solid black;
 border-radius: 10px;
 }
-
 .margen {
   margin: 30px;
 }
-
 .content-header {
   background-color: #fdc331;
 }
-
 .btn {
   background: rgb(255,214,94);
 }
-
 .logo {
   width: 130px;
   padding-left: 40px;
 }
-
 .name {
   font-size: 2em;
   font-family: fantasy;
 }
-
 footer {
   background-color: #727e88;
   height: 50px;

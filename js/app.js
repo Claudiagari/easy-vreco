@@ -2,7 +2,6 @@ var initMap = () => {
   let casa = {
     lat: -12.173045,
     lng: -77.005913
-
   };
   let map = new google.maps.Map(document.getElementById('map'), {
     zoom: 4,
@@ -17,20 +16,16 @@ var initMap = () => {
       lat: latitud,
       lng: longitud
     });
-
     let myubication = new google.maps.Marker({
       position: {
         lat: latitud,
         lng: longitud,
-
       },
       map: map,
       title: 'Hello! Bienvenidooo!! :)',
       icon: 'docs/images/bici.png'
     });
   };
-
-
   let error = (error) =>{
     alert('Tenemos un error al localizar su ubicación');
   };
