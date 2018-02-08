@@ -18,7 +18,7 @@ var initMap = () => {
     });
     let myubication = new google.maps.Marker({
       position: {
-        lat: latitud, 
+        lat: latitud,
         lng: longitud},
       map: map
     });
@@ -34,7 +34,7 @@ var initMap = () => {
   document.getElementById('encuentrame').addEventListener('click', search);
   let inputStart = document.getElementById('start');
   let inputEnd = document.getElementById('end');
-  new google.maps.places.Autocomplete(inputStart); 
+  new google.maps.places.Autocomplete(inputStart);
   new google.maps.places.Autocomplete(inputEnd);
   let directionsService = new google.maps.DirectionsService;
   let directionsDisplay = new google.maps.DirectionsRenderer;
@@ -57,5 +57,3 @@ var initMap = () => {
   };
   document.getElementById('ruta').addEventListener('click', traceRoute);
 };
-
-
