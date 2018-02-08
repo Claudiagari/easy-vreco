@@ -1,4 +1,4 @@
-  # ** TU RUTA**
+  # **TU RUTA**
 
 <p align="center">
 	<img src="docs/images/logo.png">
@@ -38,7 +38,7 @@ una aplicacion de chat para telefonos moviles.
 
 Entender qué es la geolocalización y cómo usar el API
 
-## ** TU RUTA**
+## **TU RUTA**
 
 Se realizo la creacion de nuestra pagina web TU RUTA como una manera de ayudar a los usuarios a ubicarse y que puedan elegir el camino mas corto y seguro:
 
