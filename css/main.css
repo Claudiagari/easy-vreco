@@ -1,4 +1,35 @@
 #map{
   width: 100%;
   height: 90vh;
+  border: 3px solid black;
+border-radius: 10px;
+}
+
+.margen {
+  margin: 30px;
+}
+
+.content-header {
+  background-color: #fdc331;
+}
+
+.btn {
+  background: rgb(255,214,94);
+}
+
+.logo {
+  width: 130px;
+  padding-left: 40px;
+}
+
+.name {
+  font-size: 2em;
+}
+
+footer {
+  background-color: #727e88;
+  height: 50px;
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
 }
